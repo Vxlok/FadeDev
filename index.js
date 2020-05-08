@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const token = 'NzA2Njc4OTk0MjA0MDk4NTcz.XrNKvA.qAxFfh6OT9WBI1GBORfiEaxT1z0';
 const prefix = '>';
 const mx = require('ms')
 var verison = '0.0.1';
@@ -94,4 +93,4 @@ bot.on('message', message=>{
         //-----------------------------
     }
 })
-bot.login(token);
+bot.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
